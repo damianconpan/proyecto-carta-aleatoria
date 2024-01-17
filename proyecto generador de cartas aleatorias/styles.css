@@ -56,3 +56,41 @@ body {
     top: 10px;
     left: 10px;
 }
+.spade::after,
+.club::after,
+.heart::after,
+.diamond::after {
+    content: "";
+    position: absolute;
+    font-size: 30px;
+    color: black; 
+}
+.spade::after {
+    content: "♠"; 
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.club::after {
+    content: "♣"; 
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.heart::after {
+    content: "♥"; 
+    color: red; 
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.diamond::after {
+    content: "♦"; 
+    color: red; 
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
